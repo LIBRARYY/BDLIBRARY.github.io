@@ -14,7 +14,7 @@
 const config = {
     "info": {
         "name": "BDFD",
-        "authors": ["Brabus", "The Way", "your nickname"],
+        "authors": ["Brabus", "The Way", "hio"],
         "version": "1.1.2",
         "description": "LIBRARY for most of the Better Discord plugins"
     },
